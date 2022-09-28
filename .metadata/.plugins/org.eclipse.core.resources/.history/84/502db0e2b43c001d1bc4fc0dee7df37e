@@ -1,0 +1,14 @@
+package com.springdatarest.demo.controller;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+public class TestController {
+	
+	@RequestMapping("/getallalien")
+	@ResponseBody
+	public void getallaliens() {
+		//return "Test Response Body";
+	}
+
+}

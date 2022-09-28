@@ -1,0 +1,5 @@
+insert into alien values(1,'kannan','Java');
+insert into alien values(2,'kannans','Javas');
+insert into alien values(3,'kannanss','Javass');
+insert into alien values(4,'kannandd','Javadd');
+insert into alien values(5,'kannanhhh','Javahh');

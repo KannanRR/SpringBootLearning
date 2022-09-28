@@ -1,0 +1,16 @@
+package com.springdatarest.demo;
+
+public class MockitoDemoApplicationTests {
+   @Autowired
+   private OrderService orderService;
+   
+   @Autowired
+   private ProductService productService;
+
+   @Test
+   public void whenUserIdIsProvided_thenRetrievedNameIsCorrect() {
+      Mockito.when(productService.getProductName()).thenReturn("Mock Product Name");
+      String testName = orderService.getProductName();
+      Assert.assertEquals("Mock Product Name", testName);
+   }
+}

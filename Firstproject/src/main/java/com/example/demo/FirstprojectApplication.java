@@ -1,0 +1,28 @@
+package com.example.demo;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
+
+@SpringBootApplication
+public class FirstprojectApplication {
+
+	public static void main(String[] args) {
+		
+		// This is the Normal way of Creating object in Java using new method
+		/*SpringApplication.run(FirstprojectApplication.class, args);
+		System.out.println("Welcome to Spring Boot ..");
+		Alien a = new Alien();
+		a.show();*/
+		
+		// How to get it via another way like bean
+		
+		ConfigurableApplicationContext context = SpringApplication.run(FirstprojectApplication.class, args);
+		Alien a = context.getBean(Alien.class);
+		a.show();
+		
+		//Alien a1 = context.getBean(Alien.class);
+		//a1.show();
+	}
+
+}

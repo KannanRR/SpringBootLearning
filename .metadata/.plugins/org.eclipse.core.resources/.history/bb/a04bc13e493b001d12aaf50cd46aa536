@@ -1,0 +1,5 @@
+package com.springdatarest.demo.service;
+
+public class Producer {
+
+}

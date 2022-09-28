@@ -1,0 +1,12 @@
+package com.springdatarest.demo.service;
+
+import org.springframework.kafka.annotation.KafkaListener;
+
+public class Consumer {
+	
+	@KafkaListener(topics="mytopic",groupId="mygroup")
+	public void consumeFromTopic(String message) {
+		System.out.println("Consumed Message "+ message);
+	}
+
+}
